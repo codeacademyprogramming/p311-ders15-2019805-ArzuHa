@@ -1,0 +1,13 @@
+.class1{
+    background-color: red;
+    font-size: 30px;
+    right: 0;
+    position: absolute;
+}
+
+.class2{
+    background-color: green;
+    font-size: 60px;
+    bottom: 0;
+    position: absolute;
+}

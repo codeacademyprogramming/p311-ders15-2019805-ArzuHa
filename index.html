@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/events.js"></script>
+</head>
+
+<body onload="bodyLoaded()">
+    <!-- <button onclick="btnClick(this)" name="button-1">Clikle!</button> -->
+    <button onclick="btnClickReceiveEvent(event)" name="button-2">Click me!</button>
+    <button onclick="confirm('Message');">Click me!</button>
+
+    <p id="paragraf1" onmouseover="mouseOver()" onmouseout="mouseOut(this)">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa repellat ratione delectus maiores, iure impedit
+        minus aut incidunt ea ducimus expedita odit minima dolorem quisquam, facilis voluptates error laborum.
+    </p>
+
+    <marquee behavior="" direction="" onmouseover="stop()" onmouseout="start()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus. Iste omnis a mollitia explicabo dolore
+        repudiandae dolorem esse, aut cupiditate veritatis ab, quibusdam facere, maxime ex pariatur quis necessitatibus.
+    </marquee>
+
+    <hr>
+
+    <select name="select-1" id="select-1" onchange="selectedChange()">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="#16a085">NEPHRITIS</option>
+        <option value="#d35400">PUMPKIN</option>
+    </select>
+
+    <select name="select-2" id="select-2" onchange="changeFontSize()">
+        <option value="15px">15px</option>
+        <option value="20px">20px</option>
+        <option value="23px">23px</option>
+        <option value="28px">28px</option>
+    </select>
+
+    <select name="select-2" id="select-2" onchange="changeClass(this)">
+        <option value="class1">Class1</option>
+        <option value="class2">Class2</option>
+    </select>
+    <hr>
+    <input type="number" id="value1" 
+    onfocus="inputFocus(this)" 
+    onblur="inputBlur(this)">
+    <select name="select-operation" id="select-operation">
+        <option value="-">Minus</option>
+        <option value="+">Plus</option>
+        <option value="*">Multiply</option>
+        <option value="/">Divide</option>
+    </select>
+    <input type="number" id="value2" onkeydown="keyDown(event)" onkeyup="keyUp(event)" onkeypress="keyPress(event)">
+    =
+    <input type="number" id="result">
+
+    <hr>
+    <select name="" id="" onchange="changeWebSite(this)">
+        <option value="" selected disabled>Secim et</option>
+        <option value="https://www.facebook.com">Facebook</option>
+        <option value="https://www.google.com">Google</option>
+        <option value="https://flatuicolors.com/palette/defo">FlatUiColors</option>
+    </select>
+    <hr>
+    <form action="" method="GET" onsubmit="formSubmit()">
+        <input type="text" id="FullName" name="FullName" value="Javascript">
+        <input type="submit" value="Gonder">
+        <input type="reset" value="Temizle">
+    </form>
+</body>
+
+</html>
